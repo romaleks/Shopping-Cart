@@ -53,12 +53,26 @@ header {
   }
   .nav {
     .nav-item {
-      font-size: 1.1rem;
+      position: relative;
+      font-size: 1.2rem;
       color: $grey;
       cursor: pointer;
       &.active {
         color: #000;
         font-weight: 600;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        background: $orange;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s ease;
+      }
+      &:hover:after {
+        width: 100%;
       }
     }
   }
