@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './card/Card'
+import Card from './utils/Card'
 import sneak from '../assets/sneak1.png'
 
 const Home = () => {

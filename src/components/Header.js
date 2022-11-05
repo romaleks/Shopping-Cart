@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from './utils/Nav'
 import { ReactComponent as Logo } from '../assets/logo.svg'
 import { ReactComponent as Shop } from '../assets/shop.svg'
 import { ReactComponent as Magnify } from '../assets/magnify.svg'
@@ -10,13 +11,7 @@ const Header = () => {
         <Logo className='icon' />
         <h1 className='title'>SneakShop</h1>
       </div>
-      <nav>
-        <ul className='container nav gap'>
-          <li className='nav-item active'>Home</li>
-          <li className='nav-item'>Shop</li>
-          <li className='nav-item'>Contacts</li>
-        </ul>
-      </nav>
+      <Nav />
       <div className='container gap'>
         <Shop className='icon' />
         <Magnify className='icon' />
