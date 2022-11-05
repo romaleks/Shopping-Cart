@@ -27,7 +27,7 @@ a {
 }
 main {
   flex: 1;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 3rem 3rem 3rem;
 }
 // Utils
 .btn {
@@ -50,10 +50,9 @@ main {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   border: 2px solid #000;
   border-radius: 10px;
-  box-shadow: 1rem 1rem 0 $orange, 1rem 1rem 0 2px #000;
   .image {
     width: 400px;
   }
@@ -155,6 +154,34 @@ header {
     flex: 0 0 50%;
     text-align: center;
     .card {
+      height: 400px;
+      box-shadow: 1rem 1rem 0 $orange, 1rem 1rem 0 2px #000;
+      .image {
+        width: 500px;
+      }
+    }
+  }
+}
+// Shop
+.shop {
+  text-align: center;
+  h2.title {
+    font-size: 3rem;
+  }
+  .grid {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    .card {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        transform: translate(-0.5rem, -0.5rem);
+        box-shadow: 0.5rem 0.5rem 0 $orange, 0.5rem 0.5rem 0 2px #000;
+      }
     }
   }
 }
