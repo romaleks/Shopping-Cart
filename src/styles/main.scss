@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 // Constants
 $orange: hsl(6, 92%, 64%);
+$blue: hsl(187, 70%, 53%);
 $grey: hsl(198, 47%, 18%);
 // General
 * {
@@ -45,7 +46,7 @@ main {
   }
 }
 .card {
-  height: 400px;
+  height: 300px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,7 +55,7 @@ main {
   border-radius: 10px;
   box-shadow: 1rem 1rem 0 $orange, 1rem 1rem 0 2px #000;
   .image {
-    width: 500px;
+    width: 400px;
   }
   .about {
     padding: 1rem;
