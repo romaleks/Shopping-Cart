@@ -53,6 +53,7 @@ main {
   align-items: center;
   border: 2px solid #000;
   border-radius: 10px;
+  color: inherit;
   .image {
     width: 400px;
   }
@@ -177,7 +178,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 2rem;
     .card {
-      color: inherit;
       cursor: pointer;
       transition: all 0.2s ease;
       &:hover {
