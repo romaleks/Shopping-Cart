@@ -9,7 +9,8 @@ import sneak6 from '../../assets/sneakers/sneak6.png'
 import sneak7 from '../../assets/sneakers/sneak7.png'
 import sneak8 from '../../assets/sneakers/sneak8.png'
 import sneak9 from '../../assets/sneakers/sneak9.png'
-import { ReactComponent as Arrow } from '../../assets/arrow.svg'
+import { ReactComponent as Plus } from '../../assets/plus.svg'
+import { ReactComponent as Minus } from '../../assets/minus.svg'
 
 const CardsGrid = () => {
   const mainSneakers = [
@@ -64,13 +65,16 @@ const CardsGrid = () => {
 
   const [sneakers, setSneakers] = useState(mainSneakers)
   const [status, setStatus] = useState('See More')
+  const [icon, setIcon] = useState(<Plus />)
 
   const changeStatus = () => {
     if (status === 'See More') {
       setStatus('See Less')
+      setIcon(<Minus />)
       setSneakers([...mainSneakers, ...otherSneakers])
     } else {
       setStatus('See More')
+      setIcon(<Plus />)
       setSneakers(mainSneakers)
     }
   }
@@ -88,7 +92,7 @@ const CardsGrid = () => {
         )
       })}
       <div className='more' onClick={changeStatus}>
-        {status} <Arrow />
+        {status} {icon}
       </div>
     </div>
   )
