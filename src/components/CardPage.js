@@ -1,6 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { mainSneakers, otherSneakers } from '../data/sneakers'
+import ColorPicker from './utils/ColorPicker'
+import SizePicker from './utils/SizePicker'
 import { ReactComponent as Plus } from '../assets/plus.svg'
 import { ReactComponent as Minus } from '../assets/minus.svg'
 
@@ -18,20 +20,20 @@ const CardPage = () => {
             <h2 className='title'>{sneaker.title}</h2>
             <div className='price'>${sneaker.price}</div>
           </div>
-          <div className='desctiption'>
+          <div className='description'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis cum
             explicabo veniam maxime earum sunt praesentium debitis optio eaque deleniti!
             Quia aspernatur minima illo laboriosam.
           </div>
-          <div className='color-picker'></div>
-          <div className='size-picker'></div>
+          <ColorPicker />
+          <SizePicker />
           <div className='buttons'>
             <div className='amount-btn'>
               <Minus />
               0
               <Plus />
             </div>
-            <div className='cart-btn'>add to cart</div>
+            <div className='cart-btn btn'>add to cart</div>
           </div>
         </div>
       </div>
