@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Shop from './components/Shop'
 import Footer from './components/Footer'
+import CardPage from './components/CardPage'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />
+          <Route path='/shop/:title' element={<CardPage />} />
         </Routes>
         <Footer />
       </Router>
