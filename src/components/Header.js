@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './utils/Nav'
 import { ReactComponent as Logo } from '../assets/logo.svg'
-import { ReactComponent as Shop } from '../assets/shop.svg'
+import { ReactComponent as Cart } from '../assets/cart.svg'
 import { ReactComponent as Magnify } from '../assets/magnify.svg'
 
 const Header = () => {
@@ -13,7 +13,9 @@ const Header = () => {
       </div>
       <Nav />
       <div className='container gap'>
-        <Shop className='icon' />
+        <div className='cart'>
+          <Cart className='icon' />
+        </div>
         <Magnify className='icon' />
         <button className='btn'>Log in</button>
       </div>

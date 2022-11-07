@@ -3,8 +3,7 @@ import { useParams } from 'react-router-dom'
 import { mainSneakers, otherSneakers } from '../data/sneakers'
 import ColorPicker from './utils/ColorPicker'
 import SizePicker from './utils/SizePicker'
-import { ReactComponent as Plus } from '../assets/plus.svg'
-import { ReactComponent as Minus } from '../assets/minus.svg'
+import AmountBtn from './utils/AmountBtn'
 import { ReactComponent as Arrow } from '../assets/arrow.svg'
 
 const CardPage = () => {
@@ -29,11 +28,7 @@ const CardPage = () => {
           <ColorPicker />
           <SizePicker />
           <div className='buttons'>
-            <div className='amount-btn'>
-              <Minus />
-              1
-              <Plus />
-            </div>
+            <AmountBtn />
             <div className='cart-btn btn'>
               add to cart
               <Arrow />
