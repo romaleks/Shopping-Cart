@@ -15,6 +15,7 @@ $lite-grey: hsl(0, 0%, 60%);
 body {
   font-family: 'Raleway', sans-serif;
   height: 100vh;
+  background: #fffcf2;
 }
 .App {
   height: 100vh;
@@ -303,10 +304,12 @@ header {
   margin: 0 auto;
   padding: 2rem 0 0 0;
   display: flex;
+  align-items: flex-start;
   gap: 2rem;
   .image {
     flex: 1 1 50%;
     border: 3px solid #000;
+    max-width: 700px;
   }
   .content {
     flex: 1 1 50%;

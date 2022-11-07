@@ -30,7 +30,7 @@ const CardPage = () => {
           <div className='buttons'>
             <div className='amount-btn'>
               <Minus />
-              0
+              1
               <Plus />
             </div>
             <div className='cart-btn btn'>add to cart</div>
