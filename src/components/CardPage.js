@@ -5,6 +5,7 @@ import ColorPicker from './utils/ColorPicker'
 import SizePicker from './utils/SizePicker'
 import { ReactComponent as Plus } from '../assets/plus.svg'
 import { ReactComponent as Minus } from '../assets/minus.svg'
+import { ReactComponent as Arrow } from '../assets/arrow.svg'
 
 const CardPage = () => {
   const { title } = useParams()
@@ -33,7 +34,10 @@ const CardPage = () => {
               1
               <Plus />
             </div>
-            <div className='cart-btn btn'>add to cart</div>
+            <div className='cart-btn btn'>
+              add to cart
+              <Arrow />
+            </div>
           </div>
         </div>
       </div>
