@@ -15,7 +15,7 @@ const CardPage = () => {
   return (
     <main>
       <div className='card-page'>
-        <img src={sneaker.image} alt='' className='image' />
+        <img src={sneaker.image} alt='sneaker' className='image' />
         <div className='content'>
           <div className='about'>
             <h2 className='title'>{sneaker.title}</h2>

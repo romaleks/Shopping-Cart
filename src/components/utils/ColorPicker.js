@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ColorPicker = () => {
+  const [active, setActive] = useState('o')
+  const colors = ['w', 'o', 'r', 'p', 'g']
+
   return (
     <div className='color-picker'>
       <h3 className='title'>choose color</h3>
       <div className='colors'>
-        <div className='color w'></div>
-        <div className='color o active'></div>
-        <div className='color r'></div>
-        <div className='color b'></div>
-        <div className='color g'></div>
+        {colors.map((color, index) => (
+          <div
+            key={index}
+            className={`color ${color} ${active === color ? 'active' : ''}`}
+            onClick={() => setActive(color)}
+          ></div>
+        ))}
       </div>
     </div>
   )

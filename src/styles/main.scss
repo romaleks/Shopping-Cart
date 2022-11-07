@@ -97,9 +97,6 @@ main {
       height: 35px;
       border-radius: 50%;
       cursor: pointer;
-      &.active {
-        border: 2px solid #000;
-      }
       &.w {
         background: #fff;
         border: 1px solid #ccc;
@@ -108,13 +105,16 @@ main {
         background: $orange;
       }
       &.r {
-        background: red;
+        background: #ce4257;
       }
-      &.b {
-        background: #000;
+      &.p {
+        background: #7209b7;
       }
       &.g {
-        background: greenyellow;
+        background: #a7c957;
+      }
+      &.active {
+        border: 2px solid #000;
       }
     }
   }
