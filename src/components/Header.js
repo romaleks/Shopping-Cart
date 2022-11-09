@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../assets/logo.svg'
 import { ReactComponent as Cart } from '../assets/cart.svg'
 import { ReactComponent as Magnify } from '../assets/magnify.svg'
 
-const Header = () => {
+const Header = ({ toggleCart }) => {
   return (
     <header>
       <div className='container'>
@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       <Nav />
       <div className='container gap'>
-        <div className='cart'>
+        <div className='cart' onClick={toggleCart}>
           <Cart className='icon' />
         </div>
         <Magnify className='icon' />

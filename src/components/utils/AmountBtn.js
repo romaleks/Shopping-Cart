@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { ReactComponent as Plus } from '../../assets/plus.svg'
 import { ReactComponent as Minus } from '../../assets/minus.svg'
 
-const AmountBtn = () => {
-  const [amount, setAmount] = useState(1)
-
+const AmountBtn = ({ amount, setAmount }) => {
   const reduceAmount = () => {
     if (amount === 1) return
     setAmount(amount - 1)

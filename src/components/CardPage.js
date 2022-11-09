@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { mainSneakers, otherSneakers } from '../data/sneakers'
 import ColorPicker from './utils/ColorPicker'
@@ -6,19 +6,20 @@ import SizePicker from './utils/SizePicker'
 import AmountBtn from './utils/AmountBtn'
 import { ReactComponent as Arrow } from '../assets/arrow.svg'
 
-const CardPage = () => {
+const CardPage = ({ addItem }) => {
   const { title } = useParams()
   const allSneakers = [...mainSneakers, ...otherSneakers]
-  const sneaker = allSneakers.find(sneaker => sneaker.title === title)
+  const { price, image } = allSneakers.find(sneaker => sneaker.title === title)
+  const [amount, setAmount] = useState(1)
 
   return (
     <main>
       <div className='card-page'>
-        <img src={sneaker.image} alt='sneaker' className='image' />
+        <img src={image} alt='sneaker' className='image' />
         <div className='content'>
           <div className='about'>
-            <h2 className='title'>{sneaker.title}</h2>
-            <div className='price'>${sneaker.price}</div>
+            <h2 className='title'>{title}</h2>
+            <div className='price'>${price}</div>
           </div>
           <div className='description'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis cum
@@ -28,8 +29,11 @@ const CardPage = () => {
           <ColorPicker />
           <SizePicker />
           <div className='buttons'>
-            <AmountBtn />
-            <div className='cart-btn btn'>
+            <AmountBtn amount={amount} setAmount={setAmount} />
+            <div
+              className='cart-btn btn'
+              onClick={() => addItem(title, price, amount, image)}
+            >
               add to cart
               <Arrow />
             </div>
