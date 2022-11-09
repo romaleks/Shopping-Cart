@@ -16,6 +16,7 @@ body {
   font-family: 'Raleway', sans-serif;
   height: 100vh;
   background: #fffcf2;
+  overflow: hidden;
 }
 .App {
   height: 100vh;
@@ -191,7 +192,7 @@ header {
     transform: translateY(-3px);
     cursor: pointer;
   }
-  .cart {
+  .cart-icon {
     position: relative;
     &:before {
       content: '1';
@@ -364,6 +365,28 @@ header {
       align-items: flex-end;
       display: flex;
       gap: 2rem;
+    }
+  }
+}
+// Cart
+.cart {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  &.active {
+    transform: translateX(0%);
+  }
+  .items {
+    .item {
+      .image {
+        img {
+          width: 80px;
+        }
+      }
     }
   }
 }

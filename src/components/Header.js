@@ -13,7 +13,7 @@ const Header = ({ toggleCart }) => {
       </div>
       <Nav />
       <div className='container gap'>
-        <div className='cart' onClick={toggleCart}>
+        <div className='cart-icon' onClick={toggleCart}>
           <Cart className='icon' />
         </div>
         <Magnify className='icon' />

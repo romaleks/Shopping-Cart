@@ -12,7 +12,7 @@ const App = () => {
   const [cartItems, setCartItems] = useState([])
 
   const toggleCart = () => {
-    if (!cartStatus) setCartStatus(false)
+    if (!cartStatus) setCartStatus(true)
     else setCartStatus(false)
   }
 
