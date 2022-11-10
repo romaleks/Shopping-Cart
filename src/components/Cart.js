@@ -3,6 +3,7 @@ import React from 'react'
 const Cart = ({ status, items }) => {
   return (
     <div className={`cart ${status ? 'active' : ''}`}>
+      <div className='title'>Cart</div>
       <div className='items'>
         {items.map((item, index) => {
           const { title, price, image, amount } = item
@@ -14,15 +15,18 @@ const Cart = ({ status, items }) => {
                 <div className='amount'>{amount}</div>
               </div>
               <div className='info'>
-                <div className='title'>{title}</div>
-                <div className='price'>{price}</div>
+                <div className='item-title'>{title}</div>
+                <div className='price'>${price}</div>
               </div>
             </div>
           )
         })}
       </div>
-      <div className='price'></div>
-      <div className='checkout-btn'></div>
+      <div className='total'>
+        <div className='total-title'>Total:</div>
+        <div className='total-price'>$1000</div>
+      </div>
+      <div className='checkout-btn btn'>checkout</div>
     </div>
   )
 }
