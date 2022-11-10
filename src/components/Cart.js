@@ -1,6 +1,13 @@
 import React from 'react'
 
 const Cart = ({ status, items }) => {
+  const computeTotal = () => {
+    return items.reduce(
+      (currentPrice, item) => currentPrice + item.price * item.amount,
+      0
+    )
+  }
+
   return (
     <div className={`cart ${status ? 'active' : ''}`}>
       <div className='title'>Cart</div>
@@ -24,7 +31,7 @@ const Cart = ({ status, items }) => {
       </div>
       <div className='total'>
         <div className='total-title'>Total:</div>
-        <div className='total-price'>$1000</div>
+        <div className='total-price'>${computeTotal()}</div>
       </div>
       <div className='checkout-btn btn'>checkout</div>
     </div>
