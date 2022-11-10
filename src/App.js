@@ -38,7 +38,7 @@ const App = () => {
   return (
     <div className='App'>
       <Router>
-        <Header toggleCart={toggleCart} />
+        <Header toggleCart={toggleCart} cartItems={cartItems} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop />} />

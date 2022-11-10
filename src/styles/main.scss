@@ -197,11 +197,10 @@ header {
   }
   .cart-icon {
     position: relative;
-    &:before {
-      content: '1';
+    .cart-amount {
       position: absolute;
-      top: -5px;
-      right: -15px;
+      top: -7px;
+      right: -17px;
       width: 25px;
       height: 25px;
       border-radius: 50%;
