@@ -32,7 +32,10 @@ const CardPage = ({ addItem }) => {
             <AmountBtn amount={amount} setAmount={setAmount} />
             <div
               className='cart-btn btn'
-              onClick={() => addItem(title, price, amount, image)}
+              onClick={() => {
+                addItem(title, price, amount, image)
+                setAmount(1)
+              }}
             >
               add to cart
               <Arrow />

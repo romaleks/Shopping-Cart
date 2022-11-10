@@ -44,7 +44,7 @@ const App = () => {
           <Route path='/shop' element={<Shop />} />
           <Route path='/shop/:title' element={<CardPage addItem={addItem} />} />
         </Routes>
-        <Cart status={cartStatus} items={cartItems} />
+        <Cart status={cartStatus} closeCart={toggleCart} items={cartItems} />
         <Footer />
       </Router>
     </div>

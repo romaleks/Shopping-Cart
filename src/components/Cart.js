@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cart = ({ status, items }) => {
+const Cart = ({ status, closeCart, items }) => {
   const computeTotal = () => {
     return items.reduce(
       (currentPrice, item) => currentPrice + item.price * item.amount,
@@ -10,6 +10,7 @@ const Cart = ({ status, items }) => {
 
   return (
     <div className={`cart ${status ? 'active' : ''}`}>
+      <div className='close-btn' onClick={closeCart}></div>
       <div className='title'>Cart</div>
       <div className='items'>
         {items.map((item, index) => {

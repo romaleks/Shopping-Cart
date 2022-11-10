@@ -386,6 +386,35 @@ header {
   &.active {
     transform: translateX(0%);
   }
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: $orange;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background: #fff;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background: #fff;
+      transform: rotate(-45deg);
+    }
+  }
   .title {
     text-align: center;
     font-size: 2rem;
