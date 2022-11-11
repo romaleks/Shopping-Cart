@@ -37,7 +37,7 @@ const App = () => {
   }
 
   return (
-    <Router basename='/shopping_cart'>
+    <Router basename='/Shopping-Cart'>
       <Header toggleCart={toggleCart} cartItems={cartItems} />
       <Routes>
         <Route path='/' element={<Home />} />
