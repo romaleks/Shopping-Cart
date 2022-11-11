@@ -37,18 +37,16 @@ const App = () => {
   }
 
   return (
-    <div className='App'>
-      <Router>
-        <Header toggleCart={toggleCart} cartItems={cartItems} />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/shop' element={<Shop />} />
-          <Route path='/shop/:title' element={<CardPage addItem={addItem} />} />
-        </Routes>
-        <Cart status={cartStatus} closeCart={toggleCart} items={cartItems} />
-        <Footer />
-      </Router>
-    </div>
+    <Router basename='/'>
+      <Header toggleCart={toggleCart} cartItems={cartItems} />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
+        <Route path='/shop/:title' element={<CardPage addItem={addItem} />} />
+      </Routes>
+      <Cart status={cartStatus} closeCart={toggleCart} items={cartItems} />
+      <Footer />
+    </Router>
   )
 }
 

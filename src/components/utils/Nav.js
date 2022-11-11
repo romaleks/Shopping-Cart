@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <nav className='container nav gap'>
       <NavLink
-        to='/'
+        to='/home'
         className={({ isActive }) => (isActive ? 'nav-item active' : 'nav-item')}
       >
         Home
