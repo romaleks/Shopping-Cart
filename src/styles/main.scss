@@ -22,7 +22,7 @@ body {
   background: $main;
   overflow-x: hidden;
 }
-.App {
+#root {
   height: 100vh;
   display: flex;
   flex-direction: column;
