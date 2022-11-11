@@ -20,8 +20,9 @@ const App = () => {
     const existingItem = cartItems.findIndex(item => item.title === title)
 
     if (existingItem !== -1) {
+      const newAmount = cartItems[existingItem].amount + amount
       setCartItems(prevState => {
-        prevState[existingItem].amount += amount
+        prevState[existingItem].amount = newAmount
         return [...prevState]
       })
     } else {
