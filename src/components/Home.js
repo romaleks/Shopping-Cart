@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './utils/Card'
 import sneak from '../assets/sneakers/sneak1.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -17,7 +18,9 @@ const Home = () => {
             expedita consectetur tenetur veritatis eligendi. Veritatis laboriosam quos cum
             optio?
           </h3>
-          <button className='btn'>Explore Now</button>
+          <Link to='/shop'>
+            <button className='btn'>Explore Now</button>
+          </Link>
         </div>
         <div className='preview'>
           <Card title='Nike Dunk Low Sesame' price={300} image={sneak} />
