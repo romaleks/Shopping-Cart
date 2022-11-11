@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Shopping-Cart/static/css/main.7f2c9adb.css",
+    "main.js": "/Shopping-Cart/static/js/main.cab779ca.js",
+    "static/media/sneak7.png": "/Shopping-Cart/static/media/sneak7.8ce0f6b04cd8b3ecd7d3.png",
+    "static/media/sneak8.png": "/Shopping-Cart/static/media/sneak8.292ac6909150f85bfee6.png",
+    "static/media/sneak9.png": "/Shopping-Cart/static/media/sneak9.f46b73bad59abb340687.png",
+    "static/media/sneak5.png": "/Shopping-Cart/static/media/sneak5.550872b079c3962b43ad.png",
+    "static/media/sneak1.png": "/Shopping-Cart/static/media/sneak1.11d068476c3b4ba66e14.png",
+    "static/media/sneak2.png": "/Shopping-Cart/static/media/sneak2.ca8addedd4798590832a.png",
+    "static/media/sneak4.png": "/Shopping-Cart/static/media/sneak4.151389cd88fd40a9522b.png",
+    "static/media/sneak3.png": "/Shopping-Cart/static/media/sneak3.6e0a33641a65f3cfab1c.png",
+    "static/media/sneak6.png": "/Shopping-Cart/static/media/sneak6.877e98ee1b0c4fdccaae.png",
+    "static/media/logo.svg": "/Shopping-Cart/static/media/logo.214872015bed7855ffd05d5cde7bd04f.svg",
+    "static/media/magnify.svg": "/Shopping-Cart/static/media/magnify.f68a539c8f7c31d0234a0914732b7347.svg",
+    "static/media/cart.svg": "/Shopping-Cart/static/media/cart.8aadb45ad09dbc2275014d6eb70380e4.svg",
+    "static/media/github.svg": "/Shopping-Cart/static/media/github.dc277f518788db087672a872f3a36ae1.svg",
+    "index.html": "/Shopping-Cart/index.html",
+    "static/media/arrow.svg": "/Shopping-Cart/static/media/arrow.6d0f72a89dfab9ee939689d59709ce99.svg",
+    "static/media/plus.svg": "/Shopping-Cart/static/media/plus.70ad05eb376e5bcdea06857fe1803527.svg",
+    "static/media/minus.svg": "/Shopping-Cart/static/media/minus.ed0f7b9c30a6a44db4d855a0c59ce5f9.svg",
+    "main.7f2c9adb.css.map": "/Shopping-Cart/static/css/main.7f2c9adb.css.map",
+    "main.cab779ca.js.map": "/Shopping-Cart/static/js/main.cab779ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f2c9adb.css",
+    "static/js/main.cab779ca.js"
+  ]
+}
