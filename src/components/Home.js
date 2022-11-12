@@ -9,9 +9,8 @@ const Home = () => {
       <div className='home'>
         <div className='content'>
           <h2 className='title'>
-            The most <span>beautifull</span> and <span>high-quality</span> sneackers{' '}
-            <br />
-            in the whole wolrd
+            The most <span>beautiful</span> and <span>high-quality</span> sneakers <br />
+            in the whole world
           </h2>
           <h3 className='subtitle'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempora
